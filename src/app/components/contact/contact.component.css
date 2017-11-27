@@ -31,9 +31,10 @@ h1{
 }
 
 .overlay{
-  background-color: rgba(0,0,0,0.5);
+  /*background-color: rgba(0,0,0,0.5);*/
   padding: 0 10vw 10vh 10vw;
 }
+
 
 .send{
   width: 10vw;

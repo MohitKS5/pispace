@@ -11,8 +11,16 @@ p, .content{
   background: url("/assets/problem.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: top right;
+  padding: 10vw 0 10vw 0;
+}
+
+.overlay_white{
+  background-color: rgba(255,255,255,0.9);
+  padding: 2vh 10vw 2vh 10vw;
 }
 
 .red{
   background-color: #FFDF92;
+  opacity: 0.6;
 }
