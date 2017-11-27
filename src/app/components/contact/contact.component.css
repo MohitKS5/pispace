@@ -1,0 +1,48 @@
+.contact{
+  background: url("/assets/contact.jpg");
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+  filter: contrast(150%);
+}
+
+input{
+  width: 30vw;
+  height: 5vh;
+  border-radius: 2.5vh;
+  padding: 1vh;
+  margin-top: 3vh;
+}
+
+.contacts{
+
+}
+
+.forms{
+  width: 35vw;
+}
+
+h1{
+  font-size: 4rem;
+  width: 100vw;
+  text-align: center;
+  padding: 5vh 0 5vh 0;
+  font-weight: 900;
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  padding: 0 10vw 10vh 10vw;
+}
+
+.send{
+  width: 10vw;
+  background-color: greenyellow;
+  margin-left: 10vw;
+  transition: all 0.5s;
+}
+
+.send:hover{
+  background-color: green;
+  color: white;
+}

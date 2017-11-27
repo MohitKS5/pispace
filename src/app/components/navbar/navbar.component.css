@@ -1,0 +1,18 @@
+.nav{
+  height: 10vh;
+  background-color: white;
+  color: #333;
+}
+
+.menu{
+  border-right: solid 1px #aaa;
+  font-size: 1.5rem;
+  padding: 0 1.5vw 0 1.5vw;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.menu:nth-child(4){
+  color: red;
+}

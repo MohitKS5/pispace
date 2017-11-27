@@ -1,0 +1,42 @@
+.caption{
+  height: 10vh;
+  background-color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.menu{
+  border-right: 1px solid #888 ;
+  padding: 2vh 5vw 2vh 5vw;
+  text-align: right;
+  background-color: #fff8e8;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.menu:hover{
+  color: #126900;
+  background-color: #fff;
+}
+.menu:last-child{
+  border-right: hidden;
+  text-align: left;
+}
+
+.soc{
+  height: 5vh;
+}
+
+.soc img{
+  height: 100%;
+}
+
+.logo{
+  height: 7vh;
+  width: 10vw;
+}
+
+.events{
+  width: 70vw;
+}

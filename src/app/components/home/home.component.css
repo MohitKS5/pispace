@@ -1,0 +1,13 @@
+.carousell{
+  width:100%;
+}
+
+.home{
+  padding: 10vh 10vw 10vh 10vw;
+}
+
+.tool{
+  position: absolute;
+  color:red;
+  font-size: 50px;
+}
