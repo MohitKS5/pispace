@@ -14,6 +14,9 @@ import {RoutingModule} from '../app.routing';
 import { SlickComponent } from './components/slick/slick.component';
 import { FocusComponent } from './components/focus/focus.component';
 import { ContactComponent } from './components/contact/contact.component';
+import {MatSidenavModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SocLinksComponent } from './components/soc-links/soc-links.component';
 
 
 @NgModule({
@@ -27,12 +30,15 @@ import { ContactComponent } from './components/contact/contact.component';
     SlickComponent,
     FocusComponent,
     ContactComponent,
+    SocLinksComponent,
   ],
   imports: [
     BrowserModule,
     FlexLayoutModule,
     RoutingModule,
     SlickModule.forRoot(),
+    MatSidenavModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

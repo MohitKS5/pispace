@@ -1,3 +1,3 @@
-<section class="nav" fxLayout="row" fxLayoutAlign="center center">
+<section class="nav" fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap>
   <div *ngFor="let menu of menus" class="menu" [routerLink]="menu.toLowerCase()">{{menu}}</div>
 </section>

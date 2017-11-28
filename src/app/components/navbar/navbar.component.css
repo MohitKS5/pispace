@@ -1,7 +1,8 @@
 .nav{
-  height: 10vh;
+  min-height: 10vh;
   background-color: white;
   color: #333;
+  min-width: 300px;
 }
 
 .menu{
@@ -15,4 +16,17 @@
 
 .menu:nth-child(4){
   color: red;
+}
+
+@media (max-width: 1023px) {
+  .menu{
+    min-width: 300px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav{
+    width: 80vw;
+    padding-top: 10vh;
+  }
 }

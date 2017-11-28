@@ -8,3 +8,10 @@
 h1{
   font-size: 3rem;
 }
+
+@media (max-width: 1023px) {
+  .about{
+    width: 100vw;
+    text-align: justify;
+  }
+}

@@ -3,7 +3,7 @@
   background-size: cover;
   overflow: hidden;
   color: white;
-  filter: contrast(150%);
+  /*filter: contrast(150%);*/
 }
 
 input{
@@ -12,14 +12,13 @@ input{
   border-radius: 2.5vh;
   padding: 1vh;
   margin-top: 3vh;
+  min-width: 250px;
 }
 
-.contacts{
-
-}
 
 .forms{
   width: 35vw;
+  min-width: 300px;
 }
 
 h1{
@@ -31,15 +30,15 @@ h1{
 }
 
 .overlay{
-  /*background-color: rgba(0,0,0,0.5);*/
+  background-color: rgba(0,0,0,0.5);
   padding: 0 10vw 10vh 10vw;
 }
 
 
 .send{
   width: 10vw;
+  min-width: 100px;
   background-color: greenyellow;
-  margin-left: 10vw;
   transition: all 0.5s;
 }
 

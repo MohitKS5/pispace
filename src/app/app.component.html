@@ -1,4 +1,4 @@
-<section class="init">
+<section class="init" *ngIf="!mobile">
   <app-focus></app-focus>
   <div class="top_banner">
     <div class="overlay" fxLayoutAlign="center center">
@@ -9,3 +9,28 @@
   <router-outlet></router-outlet>
   <app-contact></app-contact>
 </section>
+
+
+<mat-sidenav-container class="example-container" *ngIf="mobile">
+  <mat-sidenav #sidenav mode="side" opened="true" class="fixit" fxLayoutAlign="top center" fxLayout="column">
+    <div class="logo">
+      <img src="/assets/pi.jpg" height="100%">
+    </div>
+    <button (click)="sidenav.toggle()" class="fa fa-bars togle right"></button>
+    <app-navbar (click)="sidenav.toggle()"></app-navbar>
+    <app-soc-links class="links"></app-soc-links>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button (click)="sidenav.toggle()" class="fa fa-bars togle"></button>
+    <div (click)="sidenav.close()">
+      <app-focus></app-focus>
+      <div class="top_banner">
+        <div class="overlay" fxLayoutAlign="center center">
+          <span>Pi Space</span>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+      <app-contact></app-contact>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

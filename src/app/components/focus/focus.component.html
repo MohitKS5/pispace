@@ -1,11 +1,11 @@
 <section class="caption" fxLayout="row" fxLayoutAlign="space-around center">
-  <div class="logo">
+  <div class="logo" *ngIf="!mobile">
     <img src="/assets/pi.jpg" height="100%">
   </div>
   <div fxLayout="row" fxLayoutAlign="center center" class="events">
-    <div class="menu" *ngFor="let event of events" [routerLink]="event.link">{{event.name}}<br><small>{{event.content}}</small></div>
+    <div class="menu" *ngFor="let event of events" [routerLink]="event.link">{{event.name}}<br>
+      <small>{{event.content}}</small>
+    </div>
   </div>
-  <div *ngFor="let soc of soclinks" class="soc">
-    <img [src]="'/assets/'+soc.pic+'.svg'" [style.fill]="soc.color">
-  </div>
+   <app-soc-links *ngIf="!mobile"></app-soc-links>
 </section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {_cell} from '../../config/global_const';
 
 @Component({
   selector: 'app-focus',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./focus.component.css']
 })
 export class FocusComponent implements OnInit {
+  mobile = _cell;
   events=[{
     name: 'Techshiksha',
     content: 'event | 25/6/17',
@@ -16,24 +18,9 @@ export class FocusComponent implements OnInit {
     link: 'glider_workshop'
   }
   ];
-  soclinks=[
-    {
-      name: 'facebook',
-      pic: 'fb',
-      color: 'blue'
-    },
-    {
-      name: 'google',
-      pic: 'google',
-      color: 'red'
-    },
-    {
-      name: 'linkedin',
-      pic: 'linkedin',
-      color: 'blue'
-    }
-  ];
-  constructor() { }
+  constructor() {
+    console.log(this.mobile);
+  }
 
   ngOnInit() {
   }
